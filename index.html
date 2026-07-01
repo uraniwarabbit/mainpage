@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uraniwa Rabbit - Jasa Perawatan & Grooming Kelinci Bandung</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fcfbf9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4a373;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4a373;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fefae0 0%, #e9edc9 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #4f5d2f;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #606c38;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #128c7e;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #d4a373;
+            box-shadow: 0 4px 10px rgba(212, 163, 115, 0.3);
+            margin-left: 10px;
+        }
+
+        .btn-secondary:hover {
+            background-color: #b7875b;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #4f5d2f;
+            font-size: 28px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #fefae0;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #e9edc9;
+        }
+
+        .service-card h3 {
+            color: #4f5d2f;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        /* Target 2 & 3 Highlights */
+        .highlights {
+            padding: 60px 0;
+            background: #f4f1de;
+        }
+
+        .highlight-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .highlight-box h3 {
+            color: #3d405b;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-section h4 {
+            color: #d4a373;
+            margin-bottom: 15px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #aaa;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .btn {
+                display: block;
+                margin: 10px auto !important;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Uraniwa Rabbit</a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#layanan">Layanan Grooming</a></li>
+                    <li><a href="#produk">Katalog Pakan</a></li>
+                    <li><a href="#adopsi">Adopsi Kelinci</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Spesialis Perawatan Kulit & Bulu Kelinci Bandung</h1>
+            <p>Membantu menjaga higienitas, mengatasi masalah bulu kusam, rontok, serta mengembalikan kesehatan kebersihan kulit kelinci kesayangan Anda dengan penanganan profesional.</p>
+            <a class="btn" href="https://wa.me/6285624100734?text=Halo%20Admin%20Uraniwa%2C%20saya%20ingin%20tanya%20informasi%20mengenai%20layanan%20perawatan%20dan%20grooming%20kelinci." target="_blank">Konsultasi Perawatan (WA)</a>
+            <a class="btn btn-secondary" href="#layanan">Lihat Layanan</a>
+        </div>
+    </section>
+
+    <section id="layanan" class="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Perawatan Khusus Kelinci</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Grooming Sehat Sehari-hari</h3>
+                    <p>Paket pembersihan menyeluruh, pemotongan kuku, pembersihan telinga, dan perapian bulu agar kelinci tetap aktif dan wangi.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Perawatan Kulit Intensif</h3>
+                    <p>Penanganan khusus untuk kelinci dengan kondisi kulit kering, berkerak, atau gatal-gatal ekstrem akibat kurang terjaganya kebersihan kandang.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Treatmen Bulu Gimbal</h3>
+                    <p>Treatmen bulu gimbal agar kelinci kembali segar dan menggemaskan kembali</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="highlights">
+        <div class="container">
+            <h2 class="section-title">Kebutuhan Kelinci Lainnya</h2>
+            
+            <div class="highlight-box">
+                <h3>Katalog Pakan & Perlengkapan Kelinci</h3>
+                <p>Kami menyediakan berbagai varian hay berkualitas tinggi, pelet khusus, serta multivitamin untuk menunjang imunitas tubuh kelinci Anda agar tidak mudah stres dan terserang masalah kulit. Serta perlengkapan kelinci lain nya</p>
+                <p style="margin-top: 15px;"><a class="btn btn-secondary" href="https://wa.me/6285624100734?text=Halo%20Admin%20Uraniwa%2C%20saya%20tertarik%20melihat%20katalog%20pakan%20dan%20vitamin%20kelinci." target="_blank">info Katalog Produk</a></p>
+            </div>
+
+            <div id="adopsi" class="highlight-box">
+                <h3>Adopsi Kelinci Sehat</h3>
+                <p>Ingin menambah peliharaan baru? Uraniwa Rabbit juga menyediakan kelinci siap adopsi dari keturunan yang sehat, lincah, dan dipastikan bebas dari segala riwayat gangguan kulit sejak lahir.</p>
+                <p style="margin-top: 15px;"><a class="btn btn-secondary" href="https://wa.me/6285624100734?text=Halo%20Admin%20Uraniwa%2C%20boleh%20tahu%20pilihan%20kelinci%20yang%20ready%20untuk%20diadopsi%3F" target="_blank">Tanya Stok Kelinci Ready</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>Uraniwa Rabbit</h4>
+                <p>Pusat layanan kebersihan, salon, dan penyedia kebutuhan kelinci peliharaan terbaik di wilayah Bandung Raya.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Lokasi & Kontak</h4>
+                <p> 📍 Alamat Jl. Cijagra no. 21 Bojongsoang Kab.Bandung (search keword di gmap : uraniwarabbit)</p>
+                <p> 📍 Area Layanan: Kota Bandung, Kabupaten Bandung, Cimahi (Home Service / Visit)</p>
+                <p>📞 WhatsApp: +62 856-2410-0734</p>
+            </div>
+            <div class="footer-section">
+                <h4>Kebijakan Layanan</h4>
+                <p>Semua data konsultasi dan transaksi pelanggan dijaga kerahasiaannya demi kenyamanan bersama. Kami mengutamakan kepuasan dan kebersihan peliharaan kesayangan Anda.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2011 UraniwaRabbit. All Rights Reserved. | <a href="#" style="color:#aaa; text-decoration:none;">Kebijakan Privasi</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
